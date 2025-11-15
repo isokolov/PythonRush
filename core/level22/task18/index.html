@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор интересов и пола</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Выберите ваши интересы:</legend>
+            <div>
+                <input type="checkbox" id="sport" name="interest" value="sport">
+                <label for="sport">Спорт</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Музыка</label>
+            </div>
+            <div>
+                <input type="checkbox" id="travel" name="interest" value="travel">
+                <label for="travel">Путешествия</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите ваш пол:</legend>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мужской</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

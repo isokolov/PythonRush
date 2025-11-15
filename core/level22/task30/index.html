@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector Example</title>
+    <style>
+        /* Селектор дочернего элемента для изменения стиля текста */
+        body > div > p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Этот абзац является прямым потомком внешнего div и должен быть жирным.</p>
+        <div>
+            <p>Этот абзац находится внутри вложенного div и не должен быть затронут стилем жирного шрифта.</p>
+        </div>
+    </div>
+</body>
+</html>

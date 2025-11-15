@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Page</title>
+    <style>
+        /* Селектор общего соседа для изменения цвета абзацев после заголовка <h1> */
+        h1 ~ p {
+            color: gray;
+        }
+
+        /* Селектор общего соседа для всех следующих за заголовком <h1> абзацев */
+
+
+        /* Дочерний селектор для курсива элементов списка в внутреннем <div> */
+        #inner-div > ul > li {
+            font-style: italic;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Главный заголовок</h1>
+    <p>Первый абзац, следующий за h1, должен быть серым.</p>
+    <p>Второй абзац также будет серым, если следует за h1.</p>
+    <div id="outer-div">
+        <div id="inner-div">
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

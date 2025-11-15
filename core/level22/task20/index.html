@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комплексная форма</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Выбор языков программирования</h2>
+        <label for="languages">Выберите языки программирования:</label><br>
+        <select id="languages" name="languages" multiple required>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="cpp">C++</option>
+        </select><br><br>
+
+        <h2>Загрузка изображения</h2>
+        <label for="upload-image">Загрузите изображение (только .jpg, .jpeg, .png):</label><br>
+        <input type="file" id="upload-image" name="upload-image" accept=".jpg, .jpeg, .png" required><br><br>
+
+        <h2>Уровень опыта</h2>
+        <label for="experience">Выберите уровень опыта:</label><br>
+        <input type="range" id="experience" name="experience" min="0" max="10" title="Перетащите ползунок для выбора уровня опыта"><br><br>
+
+        <h2>Тип участия в конференции</h2>
+        <label>Выберите тип участия:</label><br>
+        <input type="radio" id="participant" name="participation-type" value="participant" required>
+        <label for="participant">Участник</label><br>
+
+        <input type="radio" id="speaker" name="participation-type" value="speaker">
+        <label for="speaker">Докладчик</label><br>
+
+        <input type="radio" id="organizer" name="participation-type" value="organizer">
+        <label for="organizer">Организатор</label><br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

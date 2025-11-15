@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация Селектора Изображений</title>
+    <style>
+        /* CSS-селектор для изображений, у которых src начинается с "image" и заканчивается на ".jpg" */
+        img[src^="image"][src$=".jpg"] {
+           border: 2px solid blue;
+        }
+        
+    </style>
+</head>
+<body>
+<h1>Демонстрация Селектора Изображений</h1>
+<div>
+    <img src="image1.jpg" alt="Изображение 1">
+    <img src="image2.png" alt="Изображение 2">
+    <img src="photo3.jpg" alt="Фото 3">
+    <img src="image4.jpeg" alt="Изображение 4">
+    <img src="image5.jpg" alt="Изображение 5">
+    <img src="icon6.gif" alt="Иконка 6">
+    <img src="drawing7.svg" alt="Рисунок 7">
+</div>
+</body>
+</html>
